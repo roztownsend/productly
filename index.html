@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"> 
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
-<img src="./images/Logo.svg" alt="Productly Logo" class="logo">
+<div class="logo_box">
+    <img src="./images/logo_icon.png" alt="Productly Icon Logo">
+    <h1>Productly</h1>
+</div>
 <nav>
     <ul>
         <li><a href="product.html">Products</a></li>
@@ -25,8 +30,12 @@
 </nav>
 
 <div class="sign-in">
-    <button class="sign-in__button">Sign in</button>
-    <button>Sign up</button>
+    <a href="sign-in.html">
+        <button class="sign-in__button">Sign in</button>
+    </a>
+    <a href="sign-up.html">
+        <button>Sign up</button>
+    </a>
 </div>
     </header>
 
@@ -34,107 +43,138 @@
         
         <section>
             <div>
-                <h1>The Design Thinking superpowers</h1>
-                <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
-                <button><a href="getstarted.html">Get started</a></button>
-                <a href="video.html">Watch the video</a>
+                <h2>The Design Thinking superpowers</h2>
+                <p>Tools, tutorials, design and innovation experts, all in one
+                place! The most intuitive way to imagine your next user
+                experience.</p>
+                <a href="getstarted.html">
+                    <button>Get started</button>
+                </a>
+                <a href="video.html" class="hero__video">Watch the video</a>
             </div>
-            <img src="./images/hero_designers.png" alt="a vector image of three designers floating in the air with notebooks">
+            <img src="./images/hero_designers.png" alt="a vector image of three
+            designers floating in the air with notebooks">
+        </section>
+
+        <section class="section_features">
+            <div class="section_features__margins">
+                <h3>We design tools to unveil your superpowers</h3>
+            </div>
+            <div class="section_features__content">
+                <div class="section_features__content_card">
+                    icon
+                    <h4>First click tests</h4>
+                    While most people enjoy casino gambling,
+                </div>
+                <div class="section_features__content_card">
+                    icon
+                    <h4>Design surveys</h4>
+                    Sports betting, lottery and bingo playing for the fun
+                </div>
+                <div class="section_features__content_card">
+                    icon
+                    <h4>Preference tests</h4>
+                    The Myspace page defines the individual.
+                </div>
+                <div class="section_features__content_card">
+                    icon
+                    <h4>Five second tests</h4>
+                    Personal choices and the overall personality of the person. 
+                </div>
+            </div>
+            <div class="section_features__margins">
+                <a href="sign-up.html">
+                    <button>Sign up now</button>
+                </a>
+            </div>
         </section>
 
         <section>
-            <h3>We design tools to unveil your superpowers</h3>
             <div>
-                First click tests
-                While most people enjoy casino gambling,
-            </div>
-            <div>cd
-                Design surveys
-                Sports betting, lottery and bingo playing for the fun
-            </div>
-            <div>
-                Preference tests
-                The Myspace page defines the individual.
-            </div>
-            <div>
-                Five second tests
-                Personal choices and the overall personality of the person. 
-            </div>
-            <button>sign up now</button>
-        </section>
+                Effortless Validation for
+                <h3 class="lead-in">Design Professionals</h3>
 
-        <section>
-            <div>
-                <p>
-                    Effortless Validation for
-                    <h3>Design Professionals</h3>
-                </p>
-
-                <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+                <p>The Myspace page defines the individual, his or her
+                characteristics, traits, personal choices and the overall
+                personality of the person.</p>
                 
                 <p>
                     <h4>Accessory makers</h4>
-                    While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                    While most people enjoy casino gambling, sports betting,
+                    lottery and bingo playing for the fun
                 </p>
                 
                 <p>
                     <h4>Alterationists</h4>
-                    If you are looking for a new way to promote your business that won’t cost you more money,
+                    If you are looking for a new way to promote your business
+                    that won’t cost you more money,
                 </p>
 
                 <p>
                     <h4>Custom Design designers</h4>
-                    If you are looking for a new way to promote your business that won’t cost you more money,
+                    If you are looking for a new way to promote your business
+                    that won’t cost you more money,
                 </p>
             </div>
-            <img src="./images/design_profs_right.png" alt="a vector image of a man giving a presentation with speech bubbles">
+            <img src="./images/design_profs_right.png" class="vector_cartoon" alt="a vector image of a
+            man giving a presentation with speech bubbles">
         </section>
 
         <section>
-            <img src="./images/product_mgrs_left.png" alt="a vector image of a man using a laptop with several icons floating above it">
+            <img src="./images/product_mgrs_left.png" class="vector_cartoon" alt="a vector image of a
+            man using a laptop with several icons floating above it">
             <div>
-                <p>Easier decision making for
-                    <h3>Product Managers</h3></p>
+                Easier decision making for
+                <h3 class="lead-in">Product Managers</h3>
 
-                <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+                <p>The Myspace page defines the individual, his or her
+                characteristics, traits, personal choices and the overall
+                personality of the person.</p>
                 
-                <ul>
+                <ul class="product-managers__list">
                     <li>Never worry about overpaying for your energy again.</li>
-                    <li>We will only switch you to energy companies that we trust and will treat you right</li>
-                    <li>We track the markets daily and know where the savings are.</li>
+                    <li>We will only switch you to energy companies that we
+                    trust and will treat you right</li>
+                    <li>We track the markets daily and know where the savings
+                    are.</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <div>
-                <p>
-                    Optimisation for
-                    <h3>Marketers</h3>
-                </p>
+                Optimisation for
+                <h3 class="lead-in">Marketers</h3>
                 
-                <p>Few would argue that, despite the advancements of feminism over the
-                past three decades, women still face a double standard when it comes to
-                their behavior.</p>
+                <p>Few would argue that, despite the advancements of feminism
+                over the past three decades, women still face a double standard
+                when it comes to their behavior.</p>
 
                 <h4>Accessory makers</h4>
-                <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+                <p>While most people enjoy casino gambling, sports betting,
+                lottery and bingo playing for the fun</p>
 
                 <h4>Alterationists</h4>
-                <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                <p>If you are looking for a new way to promote your business
+                that won’t cost you more money, </p>
 
                 <h4>Custom Design designers</h4>
-                <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                <p>If you are looking for a new way to promote your business
+                that won’t cost you more money, </p>
 
             </div>
-            <img src="./images/marketers_right.png" alt="a vector image of a man pointing to a chart with rectangles">
+            <img src="./images/marketers_right.png" class="vector_cartoon" alt="a vector image of a man
+            pointing to a chart with rectangles">
         </section>
     </main>
 
     <footer>
-        <img src="./images/Logo.svg" alt="Productly Logo" class="logo">
-            <nav class="nav_footer">
-                <ul>
+        <div class="logo_box">
+            <img src="./images/logo_icon.png" alt="Productly Icon Logo">
+            <h1>Productly</h1>
+        </div>
+        <nav class="nav_footer">
+            <ul>
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -143,12 +183,12 @@
                     <li><a href="financing.html">Financing</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     <li><a href="tos.html">Terms of Service</a></li>
-                </ul>
-            </nav>
+            </ul>
+        </nav>
         <div>
-            <form action="post">
-                <input type="text" value="email">
-            <button>Sign-up Now</button>
+            <form>
+                <input type="text" width="325">
+            <a href="sign-up.html"><button>Sign-up Now</button></a>
             </form>
         </div>
     </footer>
