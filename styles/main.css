@@ -1,20 +1,24 @@
 /* Document-wide elements */
 
 body {
-    background-color: #F2F2F2;
+    background-color: #FFF;
     color: #544837;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 26px;
     max-height: 100vh;
-    max-width: 1400px;
-    width: 80%;
-    margin: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hero__video {
     color: #FF9900;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 button {
@@ -25,11 +29,13 @@ button {
     padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
+    margin:10px;
     border: none;
 }
 
 .logo_box {
-    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
 }
 
 h1 {
@@ -38,11 +44,12 @@ h1 {
     font-weight: bold;
 }
 
-nav {
+header nav {
     margin-left: auto;
+    align-items: baseline;
 }
 
-a, li {
+nav a, li {
 color: #2F281E;
 font-size: 14px;
 text-decoration: none;
@@ -52,28 +59,30 @@ display: inline;
 padding: 10px;
 }
 
-
 /* Header elements */
 
 header {
-    padding-top: 3%;
-    padding-bottom: 3%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 
 .sign-in {
-    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .sign-in__button {
-    background-color: #F2F2F2;
+    background-color: #FFF;
     color: #173A56;
     background-color: none;
     border: #BCD0E5 1px solid;
 }
 
 /* Main elements */
+
+img {
+    display: flex;
+    justify-content: space-around;
+}
 
 h2 {
     font-size: 54px;
@@ -88,60 +97,159 @@ h2, h3 {
     line-height: 54px;
 }
 
-
 h4 {
     font-size: 22px;
     line-height: 33px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-}
-
-.vector_cartoon {
-    padding: 5%;
-}
-
-.section_features {
+main { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.section_features__margins {
+section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+}
+
+/* Hero panel elements */
+
+.hero-panel {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.hero-panel__copy {
+    min-width: 550px;
+}
+
+/* Features elements */
+
+.features {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.features__margins {
     justify-content: center;
-    flex-basis: 100%;
     text-align: center;
+    max-width: 550px;
+    width:100%;
 }
 
-.section_features__content {
+.features__content {
+    display: flex;
     justify-content: space-between;
-    display: inline-flex;
-    margin: 10px;
-
+    width: 100%;
 }
 
-.section_features__content_card {
+.features__content_card {
     max-width: 240px;
 }
 
-.lead-in {
+i {
+    padding: 5px;
+}
+
+.features__icon {
+    color: #FFF;
+    border-radius: 35%;
+    padding: 15px;
+}
+
+/* I couldn't figure out how to get the drop shadow to have that abrupt edge at
+the baseline like it does in the figma icons */
+
+.first-click_icon {
+    background-color: #7752BE;
+    filter: drop-shadow(0px 3px 3px rgb(65, 65, 65));
+}
+
+.design-surveys_icon {
+    background-color: #FAB005;
+    filter: drop-shadow(0px 3px 3px rgb(65, 65, 65));
+}
+
+.pref-tests_icon {
+    background-color: #F03E3D;   
+    filter: drop-shadow(0px 3px 3px rgb(65, 65, 65));
+}
+
+.five-sec-tests_icon {
+    background-color: #4DADF7;
+    filter: drop-shadow(0px 3px 3px rgb(65, 65, 65));
+}
+
+/* "Benefits to Roles" elements */
+
+.role-card {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: left;
+}
+
+.role-card__lead-in {
     margin-top: 0px;
 }
 
-.product-managers__list {
-    list-style: image();
+/*I couldn't figure out what to do to get the list and the rest of the content
+to align. I saw stuff about 'counter styles' for custom list bullets but I wasn't sure how to implement them with icons :( */
+
+.product-managers__list ul {
+    display: flex;
 }
+
+.product-managers__list li {
+    color: #544837;
+    display: block;
+    line-height: 50px;
+    list-style-type: none;
+}
+
+.product-managers__list li:before { 
+    color:#FFF;
+    background-color: #FAB005;
+    border-radius: 35%;
+    padding: 15px;   
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin: 0px 10px 0px 0px;
+    }
 
 /* Footer elements */
 
 footer {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.nav_footer li {
-    display: block;
     max-height: 205px;
 }
+
+.push {
+    width: 50%;
+}
+
+footer nav {
+    margin-left: 0px;
+    align-items: flex-end;
+    line-height: 16px;
+}
+
+footer li {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 180px;
+    padding-left: 0px;
+}
+
+.sign-up__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.sign-up__form button {
+    margin-left: 0px;
+}
+

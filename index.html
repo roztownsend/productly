@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productly: Tools to Unveil Your Superpowers</title>
     <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="https://kit.fontawesome.com/8f4cbc2809.js" crossorigin="anonymous">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,10 +19,9 @@
 <body>
     <header>
 <div class="logo_box">
-    <img src="./images/logo_icon.png" alt="Productly Icon Logo">
-    <h1>Productly</h1>
+    <img src="./images/logo.png" alt="Productly Logo">
 </div>
-<nav>
+<nav class="navbar">
     <ul>
         <li><a href="product.html">Products</a></li>
         <li><a href="customers.html">Customers</a></li>
@@ -40,49 +41,49 @@
     </header>
 
     <main>
-        
-        <section>
-            <div>
+        <section class="hero-panel">
+            <div class="hero-panel__copy">
                 <h2>The Design Thinking superpowers</h2>
                 <p>Tools, tutorials, design and innovation experts, all in one
                 place! The most intuitive way to imagine your next user
                 experience.</p>
                 <a href="getstarted.html">
-                    <button>Get started</button>
+                <button>Get started</button>
                 </a>
-                <a href="video.html" class="hero__video">Watch the video</a>
+                <a href="video.html" class="hero__video"><i class="fas
+                fa-play"></i>Watch the video</a>
             </div>
-            <img src="./images/hero_designers.png" alt="a vector image of three
+            <img src="./images/hero_designers.png" class="cartoon" alt="a vector image of three
             designers floating in the air with notebooks">
         </section>
 
-        <section class="section_features">
-            <div class="section_features__margins">
+        <section class="features">
+            <div class="features__margins">
                 <h3>We design tools to unveil your superpowers</h3>
             </div>
-            <div class="section_features__content">
-                <div class="section_features__content_card">
-                    icon
+            <div class="features__content">
+                <div class="features__content_card">
+                    <i class="fas fa-mouse-pointer features__icon first-click_icon"></i>
                     <h4>First click tests</h4>
                     While most people enjoy casino gambling,
                 </div>
-                <div class="section_features__content_card">
-                    icon
+                <div class="features__content_card">
+                    <i class="fas fa-clipboard features__icon design-surveys_icon"></i>
                     <h4>Design surveys</h4>
                     Sports betting, lottery and bingo playing for the fun
                 </div>
-                <div class="section_features__content_card">
-                    icon
+                <div class="features__content_card">
+                    <i class="fas fa-heart features__icon pref-tests_icon"></i>
                     <h4>Preference tests</h4>
                     The Myspace page defines the individual.
                 </div>
-                <div class="section_features__content_card">
-                    icon
+                <div class="features__content_card">
+                    <i class="fas fa-hourglass-half features__icon five-sec-tests_icon"></i>
                     <h4>Five second tests</h4>
                     Personal choices and the overall personality of the person. 
                 </div>
             </div>
-            <div class="section_features__margins">
+            <div class="features__margins">
                 <a href="sign-up.html">
                     <button>Sign up now</button>
                 </a>
@@ -90,9 +91,9 @@
         </section>
 
         <section>
-            <div>
+            <div class="role-card">
                 Effortless Validation for
-                <h3 class="lead-in">Design Professionals</h3>
+                <h3 class="role-card__lead-in">Design Professionals</h3>
 
                 <p>The Myspace page defines the individual, his or her
                 characteristics, traits, personal choices and the overall
@@ -116,16 +117,16 @@
                     that won’t cost you more money,
                 </p>
             </div>
-            <img src="./images/design_profs_right.png" class="vector_cartoon" alt="a vector image of a
+            <img src="./images/design_profs_right.png" class="cartoon" alt="a vector image of a
             man giving a presentation with speech bubbles">
         </section>
 
         <section>
-            <img src="./images/product_mgrs_left.png" class="vector_cartoon" alt="a vector image of a
+            <img src="./images/product_mgrs_left.png" class="cartoon" alt="a vector image of a
             man using a laptop with several icons floating above it">
-            <div>
+            <div class="role-card">
                 Easier decision making for
-                <h3 class="lead-in">Product Managers</h3>
+                <h3 class="role-card__lead-in">Product Managers</h3>
 
                 <p>The Myspace page defines the individual, his or her
                 characteristics, traits, personal choices and the overall
@@ -142,50 +143,54 @@
         </section>
 
         <section>
-            <div>
+            <div class="role-card">
                 Optimisation for
-                <h3 class="lead-in">Marketers</h3>
+                <h3 class="role-card__lead-in">Marketers</h3>
                 
                 <p>Few would argue that, despite the advancements of feminism
                 over the past three decades, women still face a double standard
                 when it comes to their behavior.</p>
 
-                <h4>Accessory makers</h4>
+                <strong>Accessory makers</strong>
                 <p>While most people enjoy casino gambling, sports betting,
                 lottery and bingo playing for the fun</p>
 
-                <h4>Alterationists</h4>
+                <strong>Alterationists</strong>
                 <p>If you are looking for a new way to promote your business
                 that won’t cost you more money, </p>
 
-                <h4>Custom Design designers</h4>
+                <strong>Custom Design designers</strong>
                 <p>If you are looking for a new way to promote your business
                 that won’t cost you more money, </p>
 
             </div>
-            <img src="./images/marketers_right.png" class="vector_cartoon" alt="a vector image of a man
+            <img src="./images/marketers_right.png" class="cartoon" alt="a vector image of a man
             pointing to a chart with rectangles">
         </section>
     </main>
 
     <footer>
         <div class="logo_box">
-            <img src="./images/logo_icon.png" alt="Productly Icon Logo">
-            <h1>Productly</h1>
+            <img src="./images/logo.png" alt="Productly Logo">
         </div>
-        <nav class="nav_footer">
+        <nav>
             <ul>
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>    
+                    <div class="push"></div>
+        <nav>
+            <ul>
                     <li><a href="disclaimer.html">Disclaimer</a></li>
                     <li><a href="financing.html">Financing</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     <li><a href="tos.html">Terms of Service</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="sign-up__form">
             <form>
                 <input type="text" width="325">
             <a href="sign-up.html"><button>Sign-up Now</button></a>
